@@ -1,0 +1,551 @@
+---
+import '@fontsource-variable/gabarito';
+import '@fontsource-variable/atkinson-hyperlegible-next';
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import Logo from '../components/Logo.astro';
+import { site, services, photos } from '../data/site';
+
+const [featured, ...others] = services;
+const title = 'Salud en Casa Médicos | Atención médica a domicilio en Cali';
+const description =
+  'IPS de Cali que lleva médicos, enfermería, terapias y cuidados paliativos hasta su casa. Agende su cita por WhatsApp o llame al 315 956 5622.';
+const nav = [
+  { href: '#servicios', label: 'Servicios' },
+  { href: '#como-funciona', label: 'Cómo funciona' },
+  { href: '#nosotros', label: 'Nosotros' },
+  { href: '#cuidadores', label: 'Cuidadores' },
+  { href: '#contacto', label: 'Contacto' },
+];
+---
+
+<!doctype html>
+<html lang="es-CO">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0f4c9a" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <script is:inline>
+      (function () {
+        var root = document.documentElement;
+        try {
+          var theme = localStorage.getItem('scm-theme');
+          if (theme !== 'light' && theme !== 'dark') {
+            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          root.dataset.theme = theme;
+          if (localStorage.getItem('scm-text') === 'large') root.dataset.text = 'large';
+        } catch (e) {
+          root.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+
+    <div class="topbar">
+      <div class="wrap topbar__in">
+        <p class="topbar__item topbar__item--hours">
+          <Icon name="clock" size={20} />
+          <span>Lun a vie 8:00 a. m. a 5:00 p. m. · Sáb 8:00 a. m. a 1:00 p. m.</span>
+        </p>
+        <div class="topbar__tools">
+          <button class="topbar__tool" type="button" data-text-toggle>
+            <Icon name="text" size={22} />
+            <span data-text-label>Letra grande</span>
+          </button>
+          <button class="topbar__tool" type="button" data-theme-toggle>
+            <span class="tool__icon tool__icon--moon"><Icon name="moon" size={20} /></span>
+            <span class="tool__icon tool__icon--sun"><Icon name="sun" size={20} /></span>
+            <span data-theme-label>Modo oscuro</span>
+          </button>
+        </div>
+        <a class="topbar__item topbar__phone" href={site.phoneHref}>
+          <Icon name="phone" size={20} />
+          <span>{site.phoneDisplay}</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="header" data-header>
+      <div class="wrap header__in">
+        <a class="header__logo" href="#inicio" aria-label="Salud en Casa Médicos, inicio">
+          <Logo />
+        </a>
+
+        <nav class="nav" id="menu" aria-label="Principal" data-nav>
+          <ul class="nav__list">
+            {nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+          </ul>
+        </nav>
+
+        <div class="header__tools">
+          <button class="tool tool--compact" type="button" data-text-toggle>
+            <Icon name="text" />
+            <span class="tool__label" data-text-label>Letra grande</span>
+          </button>
+          <button class="tool tool--compact" type="button" data-theme-toggle>
+            <span class="tool__icon tool__icon--moon"><Icon name="moon" /></span>
+            <span class="tool__icon tool__icon--sun"><Icon name="sun" /></span>
+            <span class="tool__label" data-theme-label>Modo oscuro</span>
+          </button>
+          <a class="btn btn--accent header__cta" href="#cita">
+            <Icon name="calendar" size={20} />
+            Agendar cita
+          </a>
+          <button class="tool tool--menu" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+            <span class="tool__icon tool__icon--open"><Icon name="menu" /></span>
+            <span class="tool__icon tool__icon--close"><Icon name="close" /></span>
+            <span class="tool__label">Menú</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- Hero -->
+      <section class="hero" id="inicio">
+        <div class="wrap hero__in">
+          <div class="hero__copy">
+            <h1>Atención médica en la comodidad de su <em>hogar</em></h1>
+            <p class="hero__lead">
+              Somos una IPS de Cali. Llevamos médicos, enfermería y terapias hasta su casa, con un cuidado humanizado
+              que acompaña también a la familia.
+            </p>
+            <div class="hero__actions" data-hero-actions>
+              <a class="btn btn--accent btn--lg" href="#cita">
+                <Icon name="calendar" />
+                Agendar cita
+              </a>
+              <a class="btn btn--ghost btn--lg" href={site.phoneHref}>
+                <Icon name="phone" />
+                Llamar al {site.phoneDisplay}
+              </a>
+            </div>
+            <ul class="hero__facts">
+              <li><Icon name="shield" /> Vigilados por la Supersalud</li>
+              <li><Icon name="users" /> Médicos, enfermería y terapeutas</li>
+            </ul>
+          </div>
+
+          <div class="hero__media">
+            <div class="hero__shape" aria-hidden="true"></div>
+            <img
+              class="hero__photo"
+              src={photos.hero.src}
+              srcset={`${photos.hero.srcSmall} 800w, ${photos.hero.src} 1400w`}
+              sizes="(max-width: 900px) 92vw, 560px"
+              alt={photos.hero.alt}
+              width="1400"
+              height="990"
+              fetchpriority="high"
+            />
+            <div class="hours">
+              <p class="hours__title"><Icon name="clock" size={20} /> Horario de atención</p>
+              <dl class="hours__list">
+                {
+                  site.hours.map((h) => (
+                    <div>
+                      <dt>{h.days}</dt>
+                      <dd>{h.time}</dd>
+                    </div>
+                  ))
+                }
+              </dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap">
+          <form class="quick" data-booking="quick" novalidate>
+            <div class="field">
+              <label for="q-servicio">Servicio</label>
+              <select id="q-servicio" name="servicio" required>
+                <option value="">Elija un servicio</option>
+                {services.map((s) => <option value={s.name}>{s.name}</option>)}
+                <option value="No estoy seguro, necesito orientación">No estoy seguro</option>
+              </select>
+              <p class="field__error" data-error-for="q-servicio" hidden></p>
+            </div>
+            <div class="field">
+              <label for="q-dia">Día preferido</label>
+              <input id="q-dia" name="dia" type="date" data-date />
+              <p class="field__error" data-error-for="q-dia" hidden></p>
+            </div>
+            <div class="field">
+              <label for="q-nombre">Su nombre</label>
+              <input id="q-nombre" name="nombre" type="text" autocomplete="name" placeholder="Nombre y apellido" required />
+              <p class="field__error" data-error-for="q-nombre" hidden></p>
+            </div>
+            <button class="btn btn--accent btn--lg quick__submit" type="submit">
+              <Icon name="chat" />
+              Pedir cita
+            </button>
+            <p class="quick__note">
+              Se abre WhatsApp con su solicitud lista para enviar. Un asesor le confirma el día y la hora.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section class="section" id="servicios">
+        <div class="wrap">
+          <div class="section__head">
+            <h2>Servicios que llegan a su casa</h2>
+            <p>
+              Atención integral para el paciente, la familia, la clínica y la aseguradora. Elija un servicio y lo
+              dejamos marcado en su solicitud.
+            </p>
+          </div>
+
+          <div class="services">
+            <article class="service service--featured">
+              <img
+                class="service__photo"
+                src={photos.palliative.src}
+                alt={photos.palliative.alt}
+                width="900"
+                height="675"
+                loading="lazy"
+              />
+              <div class="service__body">
+                <h3>{featured.name}</h3>
+                <p>{featured.summary}</p>
+                <ul class="checks">
+                  {
+                    featured.includes.map((i) => (
+                      <li>
+                        <Icon name="check" size={20} />
+                        {i}
+                      </li>
+                    ))
+                  }
+                </ul>
+                <button class="btn btn--light" type="button" data-pick={featured.name}>
+                  Solicitar este servicio
+                  <Icon name="arrow" size={20} />
+                </button>
+              </div>
+            </article>
+
+            {
+              others.map((s) => (
+                <article class="service">
+                  <span class="service__icon">
+                    <Icon name={s.icon} size={28} />
+                  </span>
+                  <h3>{s.name}</h3>
+                  <p>{s.summary}</p>
+                  <ul class="checks">
+                    {s.includes.map((i) => (
+                      <li>
+                        <Icon name="check" size={20} />
+                        {i}
+                      </li>
+                    ))}
+                  </ul>
+                  <button class="link" type="button" data-pick={s.name}>
+                    Solicitar
+                    <Icon name="arrow" size={20} />
+                  </button>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Cómo funciona -->
+      <section class="band" id="como-funciona">
+        <div class="wrap">
+          <div class="section__head section__head--band">
+            <h2>Pedir la atención toma tres pasos</h2>
+            <p>No necesita crear una cuenta ni descargar nada.</p>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">1</span>
+              <h3>Cuéntenos qué necesita</h3>
+              <p>Llene la solicitud o llámenos al {site.phoneDisplay}. Puede hacerlo usted o un familiar.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">2</span>
+              <h3>Un asesor le responde</h3>
+              <p>Revisa con usted el servicio y le confirma el día y la hora de la visita.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">3</span>
+              <h3>Vamos a su casa</h3>
+              <p>El profesional llega a su domicilio y le explica a la familia cómo continuar el cuidado.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Nosotros -->
+      <section class="section" id="nosotros">
+        <div class="wrap split">
+          <div class="split__media">
+            <img src={photos.team.src} alt={photos.team.alt} width="1200" height="675" loading="lazy" />
+            <p class="badge">
+              <Icon name="shield" size={28} />
+              <span>
+                <strong>Vigilado Supersalud</strong>
+                Institución prestadora de servicios de salud
+              </span>
+            </p>
+          </div>
+          <div class="split__copy">
+            <h2>Un equipo que cuida con calidez humana</h2>
+            <p class="lead">
+              Somos un selecto grupo de profesionales del cuidado de la salud, conscientes de lo que la atención en
+              casa significa para el paciente y para su familia.
+            </p>
+            <dl class="pillars">
+              <div>
+                <dt>Integral</dt>
+                <dd>Atendemos las necesidades físicas y psicológicas del paciente, con continuidad en el domicilio.</dd>
+              </div>
+              <div>
+                <dt>Humanizado</dt>
+                <dd>Respeto por la dignidad de cada persona e involucramos a la familia con educación y apoyo.</dd>
+              </div>
+              <div>
+                <dt>Seguro</dt>
+                <dd>Promovemos la cultura de seguridad del paciente y gestionamos los riesgos de cada atención.</dd>
+              </div>
+            </dl>
+            <a class="link" href={`${site.legacy}/conocenos`}>
+              Conozca nuestra misión y política de calidad
+              <Icon name="arrow" size={20} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cuidadores -->
+      <section class="section section--tint" id="cuidadores">
+        <div class="wrap split split--reverse">
+          <div class="split__media">
+            <img src={photos.caregiver.src} alt={photos.caregiver.alt} width="1200" height="850" loading="lazy" />
+          </div>
+          <div class="split__copy">
+            <h2>También cuidamos a quien cuida</h2>
+            <p class="lead">
+              Cuidar a un ser querido en casa cansa y genera dudas. Nuestro Programa de Calidad Apoyo al Cuidador
+              acompaña a la persona que está con el paciente todos los días.
+            </p>
+            <ul class="checks checks--lg">
+              <li><Icon name="check" /> Diagnóstico de las necesidades del cuidador</li>
+              <li><Icon name="check" /> Aplicación de escalas de valoración</li>
+              <li><Icon name="check" /> Educación para el cuidado del paciente en casa</li>
+            </ul>
+            <button class="btn btn--primary" type="button" data-pick="Programa Apoyo al Cuidador">
+              Pedir orientación
+              <Icon name="arrow" size={20} />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Aseguradoras -->
+      <section class="section section--tight">
+        <div class="wrap">
+          <div class="payer">
+            <div>
+              <h2>Para clínicas y aseguradoras</h2>
+              <p>
+                La atención domiciliaria reduce hospitalizaciones innecesarias, consultas de urgencias y costo médico.
+              </p>
+            </div>
+            <a class="btn btn--primary" href={`mailto:${site.email}?subject=${encodeURIComponent('Cotización de servicios domiciliarios')}`}>
+              <Icon name="mail" size={20} />
+              Cotizar servicios
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cita -->
+      <section class="section section--book" id="cita">
+        <div class="wrap book">
+          <div class="book__info" id="contacto">
+            <h2>Agende su cita</h2>
+            <p class="lead">
+              Déjenos sus datos y el servicio que necesita. Al enviar se abre WhatsApp con el mensaje escrito; un
+              asesor le responde en el horario de atención.
+            </p>
+
+            <ul class="contact">
+              <li>
+                <span class="contact__icon"><Icon name="phone" /></span>
+                <span>
+                  <span class="contact__label">Celular y WhatsApp</span>
+                  <a href={site.phoneHref}>{site.phoneDisplay}</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact__icon"><Icon name="mail" /></span>
+                <span>
+                  <span class="contact__label">Correo</span>
+                  <a href={`mailto:${site.email}`}>{site.email}</a>
+                </span>
+              </li>
+              <li>
+                <span class="contact__icon"><Icon name="pin" /></span>
+                <span>
+                  <span class="contact__label">Dirección</span>
+                  {site.address}, {site.city}
+                </span>
+              </li>
+              <li>
+                <span class="contact__icon"><Icon name="clock" /></span>
+                <span>
+                  <span class="contact__label">Horario</span>
+                  {site.hours.map((h) => <span class="contact__line">{h.days}: {h.time}</span>)}
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" data-booking="full" novalidate>
+            <div class="form__picked" data-picked hidden>
+              <Icon name="check" size={20} />
+              <span>Servicio elegido: <strong data-picked-name></strong></span>
+            </div>
+
+            <div class="form__grid">
+              <div class="field">
+                <label for="f-nombre">Nombre y apellido</label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" required />
+                <p class="field__error" data-error-for="f-nombre" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-telefono">Teléfono de contacto</label>
+                <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ej.: 315 000 0000" required />
+                <p class="field__error" data-error-for="f-telefono" hidden></p>
+              </div>
+
+              <fieldset class="field field--wide choice">
+                <legend>¿Para quién es la atención?</legend>
+                <label><input type="radio" name="paciente" value="para mí" checked /> <span>Para mí</span></label>
+                <label><input type="radio" name="paciente" value="para un familiar" /> <span>Para un familiar</span></label>
+              </fieldset>
+
+              <div class="field field--wide">
+                <label for="f-servicio">Servicio</label>
+                <select id="f-servicio" name="servicio" required>
+                  <option value="">Elija un servicio</option>
+                  {services.map((s) => <option value={s.name}>{s.name}</option>)}
+                  <option value="Programa Apoyo al Cuidador">Programa Apoyo al Cuidador</option>
+                  <option value="No estoy seguro, necesito orientación">No estoy seguro, necesito orientación</option>
+                </select>
+                <p class="field__error" data-error-for="f-servicio" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="f-dia">Día preferido <span class="optional">(opcional)</span></label>
+                <input id="f-dia" name="dia" type="date" data-date />
+                <p class="field__error" data-error-for="f-dia" hidden></p>
+              </div>
+              <fieldset class="field choice">
+                <legend>Jornada</legend>
+                <label><input type="radio" name="jornada" value="en la mañana" checked /> <span>Mañana</span></label>
+                <label><input type="radio" name="jornada" value="en la tarde" /> <span>Tarde</span></label>
+              </fieldset>
+
+              <div class="field field--wide">
+                <label for="f-barrio">Barrio <span class="optional">(opcional)</span></label>
+                <input id="f-barrio" name="barrio" type="text" autocomplete="address-level3" />
+              </div>
+              <div class="field field--wide">
+                <label for="f-mensaje">Cuéntenos algo más <span class="optional">(opcional)</span></label>
+                <textarea id="f-mensaje" name="mensaje" rows="3"></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn--accent btn--lg form__submit" type="submit">
+              <Icon name="chat" />
+              Enviar por WhatsApp
+            </button>
+            <p class="form__legal">
+              No guardamos sus datos en este sitio: viajan en el mensaje que usted envía. Consulte la{' '}
+              <a href={site.privacyPdf}>política de privacidad</a>.
+            </p>
+
+            <div class="form__done" data-done hidden role="status">
+              <Icon name="check" size={28} />
+              <div>
+                <p><strong>Su solicitud está lista en WhatsApp.</strong> Revise el mensaje y tóquele enviar.</p>
+                <p>¿No se abrió WhatsApp? <a href="#" data-done-link target="_blank" rel="noopener">Ábralo desde aquí</a> o llame al <a href={site.phoneHref}>{site.phoneDisplay}</a>.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__in">
+        <div class="footer__brand">
+          <Logo class="logo--invert" />
+          <p>IPS de atención domiciliaria en Cali. Fomentando el autocuidado.</p>
+          <a class="footer__social" href={site.instagram} rel="noopener">
+            <Icon name="instagram" />
+            @saludencasamedicos
+          </a>
+        </div>
+        <nav aria-label="Servicios">
+          <h2>Servicios</h2>
+          <ul>
+            {services.map((s) => <li><a href="#servicios">{s.name}</a></li>)}
+          </ul>
+        </nav>
+        <nav aria-label="Institucional">
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href={`${site.legacy}/conocenos`}>Conócenos</a></li>
+            <li><a href={`${site.legacy}/servicios/asociacion-usuarios`}>Asociación de usuarios</a></li>
+            <li><a href={`${site.legacy}/corporativo`}>Corporativo</a></li>
+            <li><a href={`${site.legacy}/trabaje-con-nosotros`}>Trabaje con nosotros</a></li>
+            <li><a href={`${site.legacy}/incidentes`}>Reporte de incidente</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contacto</h2>
+          <ul>
+            <li><a href={site.phoneHref}>{site.phoneDisplay}</a></li>
+            <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+            <li>{site.address}</li>
+            <li>{site.city}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap footer__base">
+        <p>© 2026 {site.name}</p>
+        <p><a href={site.privacyPdf}>Política de privacidad y uso de datos personales</a></p>
+        <p>Fotografías provisionales de Unsplash</p>
+      </div>
+    </footer>
+
+    <nav class="dock" aria-label="Acciones rápidas" data-dock>
+      <a href={site.phoneHref}><Icon name="phone" /> Llamar</a>
+      <a href={`https://wa.me/${site.whatsappNumber}`} rel="noopener"><Icon name="chat" /> WhatsApp</a>
+      <a class="dock__main" href="#cita"><Icon name="calendar" /> Agendar</a>
+    </nav>
+
+    <script>
+      import '../scripts/site.ts';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,889 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-16T16:11:33.438Z",
+  "title": "Design System: Salud en Casa Médicos",
+  "extensions": {
+    "colorMeta": {
+      "brand-bg": {
+        "role": "primary",
+        "displayName": "Azul de marca",
+        "canonical": "#0f4c9a",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.047 257.3)",
+          "oklch(27.0% 0.103 257.3)",
+          "oklch(39.0% 0.141 257.3)",
+          "oklch(51.0% 0.141 257.3)",
+          "oklch(63.0% 0.141 257.3)",
+          "oklch(75.0% 0.141 257.3)",
+          "oklch(86.0% 0.090 257.3)",
+          "oklch(95.0% 0.032 257.3)"
+        ]
+      },
+      "brand-bg-hover": {
+        "role": "primary",
+        "displayName": "Azul de marca, hover",
+        "canonical": "#0b3d7e",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.040 257.5)",
+          "oklch(27.0% 0.089 257.5)",
+          "oklch(39.0% 0.121 257.5)",
+          "oklch(51.0% 0.121 257.5)",
+          "oklch(63.0% 0.121 257.5)",
+          "oklch(75.0% 0.121 257.5)",
+          "oklch(86.0% 0.077 257.5)",
+          "oklch(95.0% 0.028 257.5)"
+        ]
+      },
+      "brand-fg": {
+        "role": "primary",
+        "displayName": "Azul de lectura",
+        "canonical": "#0f4c9a",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.047 257.3)",
+          "oklch(27.0% 0.103 257.3)",
+          "oklch(39.0% 0.141 257.3)",
+          "oklch(51.0% 0.141 257.3)",
+          "oklch(63.0% 0.141 257.3)",
+          "oklch(75.0% 0.141 257.3)",
+          "oklch(86.0% 0.090 257.3)",
+          "oklch(95.0% 0.032 257.3)"
+        ]
+      },
+      "on-brand": {
+        "role": "neutral",
+        "displayName": "Texto sobre azul",
+        "canonical": "#ffffff",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0)",
+          "oklch(27.0% 0.000 0)",
+          "oklch(39.0% 0.000 0)",
+          "oklch(51.0% 0.000 0)",
+          "oklch(63.0% 0.000 0)",
+          "oklch(75.0% 0.000 0)",
+          "oklch(86.0% 0.000 0)",
+          "oklch(95.0% 0.000 0)"
+        ]
+      },
+      "on-brand-2": {
+        "role": "neutral",
+        "displayName": "Texto secundario sobre azul",
+        "canonical": "#d6e5f9",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 255.6)",
+          "oklch(27.0% 0.023 255.6)",
+          "oklch(39.0% 0.032 255.6)",
+          "oklch(51.0% 0.032 255.6)",
+          "oklch(63.0% 0.032 255.6)",
+          "oklch(75.0% 0.032 255.6)",
+          "oklch(86.0% 0.020 255.6)",
+          "oklch(95.0% 0.007 255.6)"
+        ]
+      },
+      "deep": {
+        "role": "primary",
+        "displayName": "Azul profundo",
+        "canonical": "#0a2f63",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.034 258.2)",
+          "oklch(27.0% 0.074 258.2)",
+          "oklch(39.0% 0.101 258.2)",
+          "oklch(51.0% 0.101 258.2)",
+          "oklch(63.0% 0.101 258.2)",
+          "oklch(75.0% 0.101 258.2)",
+          "oklch(86.0% 0.064 258.2)",
+          "oklch(95.0% 0.023 258.2)"
+        ]
+      },
+      "deeper": {
+        "role": "primary",
+        "displayName": "Azul noche",
+        "canonical": "#061b36",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 255.7)",
+          "oklch(27.0% 0.044 255.7)",
+          "oklch(39.0% 0.059 255.7)",
+          "oklch(51.0% 0.059 255.7)",
+          "oklch(63.0% 0.059 255.7)",
+          "oklch(75.0% 0.059 255.7)",
+          "oklch(86.0% 0.038 255.7)",
+          "oklch(95.0% 0.013 255.7)"
+        ]
+      },
+      "on-deep-2": {
+        "role": "neutral",
+        "displayName": "Texto secundario sobre azul profundo",
+        "canonical": "#c9d9ee",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 255.2)",
+          "oklch(27.0% 0.025 255.2)",
+          "oklch(39.0% 0.034 255.2)",
+          "oklch(51.0% 0.034 255.2)",
+          "oklch(63.0% 0.034 255.2)",
+          "oklch(75.0% 0.034 255.2)",
+          "oklch(86.0% 0.022 255.2)",
+          "oklch(95.0% 0.008 255.2)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Naranja sol",
+        "canonical": "#f8a230",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.052 68.1)",
+          "oklch(27.0% 0.115 68.1)",
+          "oklch(39.0% 0.156 68.1)",
+          "oklch(51.0% 0.156 68.1)",
+          "oklch(63.0% 0.156 68.1)",
+          "oklch(75.0% 0.156 68.1)",
+          "oklch(86.0% 0.100 68.1)",
+          "oklch(95.0% 0.036 68.1)"
+        ]
+      },
+      "accent-hover": {
+        "role": "secondary",
+        "displayName": "Naranja sol, hover",
+        "canonical": "#ffb650",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.048 72.3)",
+          "oklch(27.0% 0.105 72.3)",
+          "oklch(39.0% 0.143 72.3)",
+          "oklch(51.0% 0.143 72.3)",
+          "oklch(63.0% 0.143 72.3)",
+          "oklch(75.0% 0.143 72.3)",
+          "oklch(86.0% 0.091 72.3)",
+          "oklch(95.0% 0.033 72.3)"
+        ]
+      },
+      "on-accent": {
+        "role": "neutral",
+        "displayName": "Texto sobre naranja",
+        "canonical": "#0a2342",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.022 255.5)",
+          "oklch(27.0% 0.048 255.5)",
+          "oklch(39.0% 0.066 255.5)",
+          "oklch(51.0% 0.066 255.5)",
+          "oklch(63.0% 0.066 255.5)",
+          "oklch(75.0% 0.066 255.5)",
+          "oklch(86.0% 0.042 255.5)",
+          "oklch(95.0% 0.015 255.5)"
+        ]
+      },
+      "bg": {
+        "role": "neutral",
+        "displayName": "Cielo claro",
+        "canonical": "#f5f9fe",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 253.9)",
+          "oklch(27.0% 0.015 253.9)",
+          "oklch(39.0% 0.020 253.9)",
+          "oklch(51.0% 0.020 253.9)",
+          "oklch(63.0% 0.020 253.9)",
+          "oklch(75.0% 0.020 253.9)",
+          "oklch(86.0% 0.013 253.9)",
+          "oklch(95.0% 0.005 253.9)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Blanco de tarjeta",
+        "canonical": "#ffffff",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0)",
+          "oklch(27.0% 0.000 0)",
+          "oklch(39.0% 0.000 0)",
+          "oklch(51.0% 0.000 0)",
+          "oklch(63.0% 0.000 0)",
+          "oklch(75.0% 0.000 0)",
+          "oklch(86.0% 0.000 0)",
+          "oklch(95.0% 0.000 0)"
+        ]
+      },
+      "tint": {
+        "role": "neutral",
+        "displayName": "Azul lavado",
+        "canonical": "#e6f0fc",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 252.9)",
+          "oklch(27.0% 0.015 252.9)",
+          "oklch(39.0% 0.020 252.9)",
+          "oklch(51.0% 0.020 252.9)",
+          "oklch(63.0% 0.020 252.9)",
+          "oklch(75.0% 0.020 252.9)",
+          "oklch(86.0% 0.013 252.9)",
+          "oklch(95.0% 0.005 252.9)"
+        ]
+      },
+      "tint-2": {
+        "role": "neutral",
+        "displayName": "Azul lavado fuerte",
+        "canonical": "#d3e4f9",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 253.7)",
+          "oklch(27.0% 0.025 253.7)",
+          "oklch(39.0% 0.034 253.7)",
+          "oklch(51.0% 0.034 253.7)",
+          "oklch(63.0% 0.034 253.7)",
+          "oklch(75.0% 0.034 253.7)",
+          "oklch(86.0% 0.022 253.7)",
+          "oklch(95.0% 0.008 253.7)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Línea",
+        "canonical": "#cddbec",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 253.2)",
+          "oklch(27.0% 0.020 253.2)",
+          "oklch(39.0% 0.028 253.2)",
+          "oklch(51.0% 0.028 253.2)",
+          "oklch(63.0% 0.028 253.2)",
+          "oklch(75.0% 0.028 253.2)",
+          "oklch(86.0% 0.018 253.2)",
+          "oklch(95.0% 0.006 253.2)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Línea fuerte",
+        "canonical": "#6f8aad",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.017 254.2)",
+          "oklch(27.0% 0.038 254.2)",
+          "oklch(39.0% 0.051 254.2)",
+          "oklch(51.0% 0.051 254.2)",
+          "oklch(63.0% 0.051 254.2)",
+          "oklch(75.0% 0.051 254.2)",
+          "oklch(86.0% 0.033 254.2)",
+          "oklch(95.0% 0.012 254.2)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Azul tinta",
+        "canonical": "#0a2342",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.022 255.5)",
+          "oklch(27.0% 0.048 255.5)",
+          "oklch(39.0% 0.066 255.5)",
+          "oklch(51.0% 0.066 255.5)",
+          "oklch(63.0% 0.066 255.5)",
+          "oklch(75.0% 0.066 255.5)",
+          "oklch(86.0% 0.042 255.5)",
+          "oklch(95.0% 0.015 255.5)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Tinta secundaria",
+        "canonical": "#3a516f",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.019 255.4)",
+          "oklch(27.0% 0.042 255.4)",
+          "oklch(39.0% 0.058 255.4)",
+          "oklch(51.0% 0.058 255.4)",
+          "oklch(63.0% 0.058 255.4)",
+          "oklch(75.0% 0.058 255.4)",
+          "oklch(86.0% 0.037 255.4)",
+          "oklch(95.0% 0.013 255.4)"
+        ]
+      },
+      "danger": {
+        "role": "neutral",
+        "displayName": "Error",
+        "canonical": "#a8231b",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.057 28.8)",
+          "oklch(27.0% 0.125 28.8)",
+          "oklch(39.0% 0.170 28.8)",
+          "oklch(51.0% 0.170 28.8)",
+          "oklch(63.0% 0.170 28.8)",
+          "oklch(75.0% 0.170 28.8)",
+          "oklch(86.0% 0.108 28.8)",
+          "oklch(95.0% 0.039 28.8)"
+        ]
+      },
+      "danger-bg": {
+        "role": "neutral",
+        "displayName": "Fondo de error",
+        "canonical": "#fdecea",
+        "theme": "light",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 25.6)",
+          "oklch(27.0% 0.015 25.6)",
+          "oklch(39.0% 0.020 25.6)",
+          "oklch(51.0% 0.020 25.6)",
+          "oklch(63.0% 0.020 25.6)",
+          "oklch(75.0% 0.020 25.6)",
+          "oklch(86.0% 0.013 25.6)",
+          "oklch(95.0% 0.005 25.6)"
+        ]
+      },
+      "brand-bg-dark": {
+        "role": "primary",
+        "displayName": "Azul de marca (tema oscuro)",
+        "canonical": "#1a5fb8",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.052 257.1)",
+          "oklch(27.0% 0.114 257.1)",
+          "oklch(39.0% 0.156 257.1)",
+          "oklch(51.0% 0.156 257.1)",
+          "oklch(63.0% 0.156 257.1)",
+          "oklch(75.0% 0.156 257.1)",
+          "oklch(86.0% 0.099 257.1)",
+          "oklch(95.0% 0.035 257.1)"
+        ]
+      },
+      "brand-bg-hover-dark": {
+        "role": "primary",
+        "displayName": "Azul de marca, hover (tema oscuro)",
+        "canonical": "#2a70cc",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.053 256.8)",
+          "oklch(27.0% 0.116 256.8)",
+          "oklch(39.0% 0.159 256.8)",
+          "oklch(51.0% 0.159 256.8)",
+          "oklch(63.0% 0.159 256.8)",
+          "oklch(75.0% 0.159 256.8)",
+          "oklch(86.0% 0.101 256.8)",
+          "oklch(95.0% 0.036 256.8)"
+        ]
+      },
+      "brand-fg-dark": {
+        "role": "primary",
+        "displayName": "Azul de lectura (tema oscuro)",
+        "canonical": "#93c2ff",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.033 255.2)",
+          "oklch(27.0% 0.074 255.2)",
+          "oklch(39.0% 0.100 255.2)",
+          "oklch(51.0% 0.100 255.2)",
+          "oklch(63.0% 0.100 255.2)",
+          "oklch(75.0% 0.100 255.2)",
+          "oklch(86.0% 0.064 255.2)",
+          "oklch(95.0% 0.023 255.2)"
+        ]
+      },
+      "on-brand-2-dark": {
+        "role": "neutral",
+        "displayName": "Texto secundario sobre azul (tema oscuro)",
+        "canonical": "#dbe8fa",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 256.5)",
+          "oklch(27.0% 0.021 256.5)",
+          "oklch(39.0% 0.028 256.5)",
+          "oklch(51.0% 0.028 256.5)",
+          "oklch(63.0% 0.028 256.5)",
+          "oklch(75.0% 0.028 256.5)",
+          "oklch(86.0% 0.018 256.5)",
+          "oklch(95.0% 0.006 256.5)"
+        ]
+      },
+      "deep-dark": {
+        "role": "primary",
+        "displayName": "Azul profundo (tema oscuro)",
+        "canonical": "#0a2a55",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.029 257.3)",
+          "oklch(27.0% 0.063 257.3)",
+          "oklch(39.0% 0.086 257.3)",
+          "oklch(51.0% 0.086 257.3)",
+          "oklch(63.0% 0.086 257.3)",
+          "oklch(75.0% 0.086 257.3)",
+          "oklch(86.0% 0.055 257.3)",
+          "oklch(95.0% 0.020 257.3)"
+        ]
+      },
+      "deeper-dark": {
+        "role": "primary",
+        "displayName": "Azul noche (tema oscuro)",
+        "canonical": "#030b15",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 249.1)",
+          "oklch(27.0% 0.020 249.1)",
+          "oklch(39.0% 0.027 249.1)",
+          "oklch(51.0% 0.027 249.1)",
+          "oklch(63.0% 0.027 249.1)",
+          "oklch(75.0% 0.027 249.1)",
+          "oklch(86.0% 0.017 249.1)",
+          "oklch(95.0% 0.006 249.1)"
+        ]
+      },
+      "accent-dark": {
+        "role": "secondary",
+        "displayName": "Naranja sol (tema oscuro)",
+        "canonical": "#ffad42",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.051 69.3)",
+          "oklch(27.0% 0.111 69.3)",
+          "oklch(39.0% 0.152 69.3)",
+          "oklch(51.0% 0.152 69.3)",
+          "oklch(63.0% 0.152 69.3)",
+          "oklch(75.0% 0.152 69.3)",
+          "oklch(86.0% 0.096 69.3)",
+          "oklch(95.0% 0.034 69.3)"
+        ]
+      },
+      "accent-hover-dark": {
+        "role": "secondary",
+        "displayName": "Naranja sol, hover (tema oscuro)",
+        "canonical": "#ffc06b",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.042 73.0)",
+          "oklch(27.0% 0.092 73.0)",
+          "oklch(39.0% 0.125 73.0)",
+          "oklch(51.0% 0.125 73.0)",
+          "oklch(63.0% 0.125 73.0)",
+          "oklch(75.0% 0.125 73.0)",
+          "oklch(86.0% 0.080 73.0)",
+          "oklch(95.0% 0.028 73.0)"
+        ]
+      },
+      "bg-dark": {
+        "role": "neutral",
+        "displayName": "Cielo claro (tema oscuro)",
+        "canonical": "#06121f",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 250.8)",
+          "oklch(27.0% 0.024 250.8)",
+          "oklch(39.0% 0.032 250.8)",
+          "oklch(51.0% 0.032 250.8)",
+          "oklch(63.0% 0.032 250.8)",
+          "oklch(75.0% 0.032 250.8)",
+          "oklch(86.0% 0.021 250.8)",
+          "oklch(95.0% 0.007 250.8)"
+        ]
+      },
+      "surface-dark": {
+        "role": "neutral",
+        "displayName": "Blanco de tarjeta (tema oscuro)",
+        "canonical": "#0d1f35",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.016 254.5)",
+          "oklch(27.0% 0.036 254.5)",
+          "oklch(39.0% 0.049 254.5)",
+          "oklch(51.0% 0.049 254.5)",
+          "oklch(63.0% 0.049 254.5)",
+          "oklch(75.0% 0.049 254.5)",
+          "oklch(86.0% 0.031 254.5)",
+          "oklch(95.0% 0.011 254.5)"
+        ]
+      },
+      "tint-dark": {
+        "role": "neutral",
+        "displayName": "Azul lavado (tema oscuro)",
+        "canonical": "#0a1a2e",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.015 255.0)",
+          "oklch(27.0% 0.033 255.0)",
+          "oklch(39.0% 0.045 255.0)",
+          "oklch(51.0% 0.045 255.0)",
+          "oklch(63.0% 0.045 255.0)",
+          "oklch(75.0% 0.045 255.0)",
+          "oklch(86.0% 0.029 255.0)",
+          "oklch(95.0% 0.010 255.0)"
+        ]
+      },
+      "tint-2-dark": {
+        "role": "neutral",
+        "displayName": "Azul lavado fuerte (tema oscuro)",
+        "canonical": "#143052",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.023 254.7)",
+          "oklch(27.0% 0.052 254.7)",
+          "oklch(39.0% 0.070 254.7)",
+          "oklch(51.0% 0.070 254.7)",
+          "oklch(63.0% 0.070 254.7)",
+          "oklch(75.0% 0.070 254.7)",
+          "oklch(86.0% 0.045 254.7)",
+          "oklch(95.0% 0.016 254.7)"
+        ]
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Línea (tema oscuro)",
+        "canonical": "#213a59",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.021 254.6)",
+          "oklch(27.0% 0.046 254.6)",
+          "oklch(39.0% 0.063 254.6)",
+          "oklch(51.0% 0.063 254.6)",
+          "oklch(63.0% 0.063 254.6)",
+          "oklch(75.0% 0.063 254.6)",
+          "oklch(86.0% 0.040 254.6)",
+          "oklch(95.0% 0.014 254.6)"
+        ]
+      },
+      "line-strong-dark": {
+        "role": "neutral",
+        "displayName": "Línea fuerte (tema oscuro)",
+        "canonical": "#5d7a9e",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.022 254.2)",
+          "oklch(27.0% 0.048 254.2)",
+          "oklch(39.0% 0.065 254.2)",
+          "oklch(51.0% 0.065 254.2)",
+          "oklch(63.0% 0.065 254.2)",
+          "oklch(75.0% 0.065 254.2)",
+          "oklch(86.0% 0.042 254.2)",
+          "oklch(95.0% 0.015 254.2)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Azul tinta (tema oscuro)",
+        "canonical": "#edf3fb",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 255.5)",
+          "oklch(27.0% 0.015 255.5)",
+          "oklch(39.0% 0.020 255.5)",
+          "oklch(51.0% 0.020 255.5)",
+          "oklch(63.0% 0.020 255.5)",
+          "oklch(75.0% 0.020 255.5)",
+          "oklch(86.0% 0.013 255.5)",
+          "oklch(95.0% 0.005 255.5)"
+        ]
+      },
+      "ink-2-dark": {
+        "role": "neutral",
+        "displayName": "Tinta secundaria (tema oscuro)",
+        "canonical": "#b6c6db",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 255.2)",
+          "oklch(27.0% 0.025 255.2)",
+          "oklch(39.0% 0.034 255.2)",
+          "oklch(51.0% 0.034 255.2)",
+          "oklch(63.0% 0.034 255.2)",
+          "oklch(75.0% 0.034 255.2)",
+          "oklch(86.0% 0.022 255.2)",
+          "oklch(95.0% 0.008 255.2)"
+        ]
+      },
+      "danger-dark": {
+        "role": "neutral",
+        "displayName": "Error (tema oscuro)",
+        "canonical": "#ffb4ab",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.030 26.8)",
+          "oklch(27.0% 0.065 26.8)",
+          "oklch(39.0% 0.089 26.8)",
+          "oklch(51.0% 0.089 26.8)",
+          "oklch(63.0% 0.089 26.8)",
+          "oklch(75.0% 0.089 26.8)",
+          "oklch(86.0% 0.057 26.8)",
+          "oklch(95.0% 0.020 26.8)"
+        ]
+      },
+      "danger-bg-dark": {
+        "role": "neutral",
+        "displayName": "Fondo de error (tema oscuro)",
+        "canonical": "#3a1512",
+        "theme": "dark",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 26.8)",
+          "oklch(27.0% 0.044 26.8)",
+          "oklch(39.0% 0.060 26.8)",
+          "oklch(51.0% 0.060 26.8)",
+          "oklch(63.0% 0.060 26.8)",
+          "oklch(75.0% 0.060 26.8)",
+          "oklch(86.0% 0.038 26.8)",
+          "oklch(95.0% 0.014 26.8)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Titular del hero, uno por página."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Título de cada sección."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Nombre de servicio y de paso."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Entradilla bajo un título, en tinta secundaria."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido; las cifras salen de Gabarito mediante la fuente de rango \"SCM Cifras\"."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Botones, enlaces con flecha y navegación."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Numerales de los pasos."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-sm",
+        "value": "0 1px 2px rgb(10 35 66 / 0.06), 0 6px 16px -8px rgb(10 35 66 / 0.14)",
+        "purpose": "Reposo: tarjetas y cabecera desplazada. Tema oscuro: 0 1px 2px rgb(0 0 0 / 0.3), 0 6px 16px -8px rgb(0 0 0 / 0.5)."
+      },
+      {
+        "name": "shadow-md",
+        "value": "0 2px 4px rgb(10 35 66 / 0.06), 0 18px 40px -16px rgb(10 35 66 / 0.24)",
+        "purpose": "Flotante: tarjetas sobre foto, fotos de bloque, hover de tarjeta, menú. Tema oscuro: 0 2px 4px rgb(0 0 0 / 0.3), 0 18px 40px -16px rgb(0 0 0 / 0.6)."
+      },
+      {
+        "name": "shadow-lg",
+        "value": "0 4px 8px rgb(10 35 66 / 0.06), 0 32px 64px -24px rgb(10 35 66 / 0.32)",
+        "purpose": "Protagonista: foto del hero, barra de cita rápida y formulario. Tema oscuro: 0 4px 8px rgb(0 0 0 / 0.3), 0 32px 64px -24px rgb(0 0 0 / 0.7)."
+      },
+      {
+        "name": "accent-glow",
+        "value": "0 10px 22px -12px rgb(190 110 0 / 0.75)",
+        "purpose": "Resplandor bajo el botón de agendar; en hover 0 16px 28px -14px rgb(190 110 0 / 0.8)."
+      },
+      {
+        "name": "dock",
+        "value": "0 -8px 24px -12px rgb(10 35 66 / 0.3)",
+        "purpose": "Sombra hacia arriba de la barra de acciones móvil."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Curva única de desaceleración para transiciones y entrada."
+      },
+      {
+        "name": "state",
+        "value": "0.2s to 0.35s",
+        "purpose": "Cambios de estado: 0.2s color y borde, 0.25s elevación de botón, 0.35s tarjeta."
+      },
+      {
+        "name": "hero-rise",
+        "value": "translateY(1.25rem) + opacity, 0.9s, stagger 0.08s",
+        "purpose": "Entrada del texto del hero en cuatro tiempos; barra rápida a 0.4s y tarjeta de horario a 0.55s."
+      },
+      {
+        "name": "hero-unveil",
+        "value": "clip-path inset(10% round 2.5rem) + scale(1.04), 1.2s, delay 0.1s",
+        "purpose": "Descubrimiento de la foto del hero; la forma azul crece desde scale(0.9) en 1.1s."
+      },
+      {
+        "name": "steps-draw",
+        "value": "scaleX(0) to 1, animation-timeline: view(), range entry 20% cover 45%",
+        "purpose": "La línea de los pasos se dibuja al entrar en pantalla donde hay soporte; desactivada en móvil."
+      },
+      {
+        "name": "dock-slide",
+        "value": "translateY(110%), 0.45s",
+        "purpose": "La barra de acciones móvil sube cuando los botones del hero salen de pantalla."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Sin animaciones de entrada ni desplazamiento suave; transiciones a 0.01ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-tight",
+        "value": "68rem"
+      },
+      {
+        "name": "stack",
+        "value": "62rem"
+      },
+      {
+        "name": "mobile",
+        "value": "47.5rem"
+      },
+      {
+        "name": "dock-small",
+        "value": "26rem"
+      },
+      {
+        "name": "dock-no-icons",
+        "value": "22rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botón de agendar",
+      "kind": "button",
+      "refersTo": "button-accent",
+      "description": "Naranja sol. Solo para abrir o enviar la solicitud de cita.",
+      "html": "<a class=\"ds-btn-accent\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg>Agendar cita</a>",
+      "css": ".ds-btn-accent { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; min-height: 3.25rem; padding: 0.5rem 1.6rem; border: 2px solid transparent; border-radius: 999px; font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; line-height: 1.15; text-decoration: none; cursor: pointer; transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease); background: var(--accent); color: var(--on-accent); box-shadow: 0 10px 22px -12px rgb(190 110 0 / 0.75); } .ds-btn-accent:hover { background: var(--accent-hover); box-shadow: 0 16px 28px -14px rgb(190 110 0 / 0.8); transform: translateY(-2px); } .ds-btn-accent:active { transform: translateY(0); } .ds-btn-accent:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; }"
+    },
+    {
+      "name": "Botón primario",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Azul de marca para acciones que no son agendar: pedir orientación, cotizar.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Pedir orientación<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; min-height: 3.25rem; padding: 0.5rem 1.6rem; border: 2px solid transparent; border-radius: 999px; font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; line-height: 1.15; text-decoration: none; cursor: pointer; transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease); background: var(--brand-bg); color: var(--on-brand); } .ds-btn-primary:hover { background: var(--brand-bg-hover); transform: translateY(-2px); } .ds-btn-primary:active { transform: translateY(0); } .ds-btn-primary:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; }"
+    },
+    {
+      "name": "Botón de contorno",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Acompaña al botón naranja; se usa para llamar.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Llamar al 315 956 5622</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; min-height: 3.25rem; padding: 0.5rem 1.6rem; border: 2px solid transparent; border-radius: 999px; font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; line-height: 1.15; text-decoration: none; cursor: pointer; transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease), box-shadow 0.25s var(--ease), transform 0.25s var(--ease); border-color: var(--brand-fg); color: var(--brand-fg); background: transparent; } .ds-btn-ghost:hover { background: var(--tint-2); transform: translateY(-2px); } .ds-btn-ghost:active { transform: translateY(0); } .ds-btn-ghost:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; }"
+    },
+    {
+      "name": "Enlace con flecha",
+      "kind": "button",
+      "refersTo": "link-arrow",
+      "description": "Acción de texto dentro de una tarjeta o bajo un bloque de lectura.",
+      "html": "<button class=\"ds-link\" type=\"button\">Solicitar<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-link { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; padding: 0; border: 0; background: none; color: var(--brand-fg); font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 0.25em; cursor: pointer; transition: text-decoration-color 0.2s var(--ease); } .ds-link svg { transition: transform 0.3s var(--ease); } .ds-link:hover { text-decoration-color: currentColor; } .ds-link:hover svg { transform: translateX(4px); } .ds-link:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; }"
+    },
+    {
+      "name": "Campo de texto",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Etiqueta visible encima, campo de 3.5rem y mensaje de error como instrucción.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-nombre\">Nombre y apellido</label><input id=\"ds-nombre\" type=\"text\" placeholder=\"Nombre y apellido\" /></div>",
+      "css": ".ds-field { display: grid; gap: 0.45rem; max-width: 22rem; font-family: var(--font-body); font-size: 1.125rem; color: var(--ink); } .ds-field label { font-weight: 700; } .ds-field input { width: 100%; min-height: 3.5rem; padding: 0.7rem 1rem; border: 1.5px solid var(--line-strong); border-radius: 0.9rem; background: var(--surface); color: var(--ink); font: inherit; transition: border-color 0.2s var(--ease); } .ds-field input::placeholder { color: var(--ink-2); opacity: 1; } .ds-field input:hover { border-color: var(--brand-fg); } .ds-field input:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 1px; border-color: var(--brand-fg); } .ds-field input[aria-invalid='true'] { border-color: var(--danger); background-color: var(--danger-bg); }"
+    },
+    {
+      "name": "Opción",
+      "kind": "chip",
+      "refersTo": "choice",
+      "description": "Elección única en cajas de 3.5rem; la elegida toma azul lavado fuerte.",
+      "html": "<fieldset class=\"ds-choice\"><legend>Jornada</legend><label><input type=\"radio\" name=\"ds-jornada\" checked /> <span>Mañana</span></label><label><input type=\"radio\" name=\"ds-jornada\" /> <span>Tarde</span></label></fieldset>",
+      "css": ".ds-choice { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0; padding: 0; border: 0; font-family: var(--font-body); font-size: 1.125rem; color: var(--ink); } .ds-choice legend { width: 100%; margin-bottom: 0.45rem; padding: 0; font-weight: 700; } .ds-choice label { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 3.5rem; padding: 0 1.15rem 0 0.95rem; border: 1.5px solid var(--line-strong); border-radius: 0.9rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s var(--ease), border-color 0.2s var(--ease); } .ds-choice input { flex: none; appearance: none; width: 1.5rem; height: 1.5rem; margin: 0; border: 2px solid var(--line-strong); border-radius: 50%; background: var(--surface); } .ds-choice input:checked { border-color: var(--brand-fg); background: var(--brand-fg); box-shadow: inset 0 0 0 0.26rem var(--surface); } .ds-choice label:hover { border-color: var(--brand-fg); } .ds-choice label:has(input:checked) { border-color: var(--brand-fg); background: var(--tint-2); color: var(--brand-fg); } .ds-choice label:has(input:focus-visible) { outline: 3px solid var(--brand-fg); outline-offset: 2px; } .ds-choice input:focus-visible { outline: none; }"
+    },
+    {
+      "name": "Tarjeta de servicio",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "Tarjeta blanca con casilla de icono, lista de verificación y acción al fondo.",
+      "html": "<article class=\"ds-service\"><span class=\"ds-service__icon\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/></svg></span><h3>Rehabilitación</h3><p>Terapias en casa para recuperar movimiento, respiración y habla.</p><ul><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Terapia física</li><li><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Terapia respiratoria</li></ul><button class=\"ds-service__link\" type=\"button\">Solicitar<svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button></article>",
+      "css": ".ds-service { display: flex; flex-direction: column; align-items: flex-start; max-width: 22rem; padding: 1.85rem; border: 1px solid var(--line); border-radius: 1.75rem; background: var(--surface); color: var(--ink); font-family: var(--font-body); font-size: 1.125rem; line-height: 1.6; box-shadow: var(--shadow-sm); transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease); } .ds-service:hover { transform: translateY(-4px); border-color: var(--line-strong); box-shadow: var(--shadow-md); } .ds-service__icon { display: inline-grid; place-items: center; width: 3.5rem; height: 3.5rem; margin-bottom: 1.25rem; border-radius: 1.1rem; background: var(--tint); color: var(--brand-fg); } .ds-service h3 { margin: 0; font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; } .ds-service p { margin: 0.6rem 0 0; color: var(--ink-2); } .ds-service ul { display: grid; gap: 0.55rem; margin: 1.15rem 0 1.1rem; padding: 0; list-style: none; } .ds-service li { display: flex; align-items: flex-start; gap: 0.6rem; line-height: 1.4; } .ds-service li svg { flex: none; margin-top: 0.15em; color: var(--brand-fg); } .ds-service__link { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; margin-top: auto; padding: 0; border: 0; background: none; color: var(--brand-fg); font-family: var(--font-display); font-size: 1.0625rem; font-weight: 600; cursor: pointer; } .ds-service__link:hover { text-decoration: underline; text-underline-offset: 0.25em; } .ds-service__link:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Numerales de paso",
+      "kind": "custom",
+      "refersTo": "step-numeral",
+      "description": "Círculos naranjas unidos por una línea sobre la franja azul de marca.",
+      "html": "<ol class=\"ds-steps\"><li><span aria-hidden=\"true\">1</span><h3>Cuéntenos qué necesita</h3></li><li><span aria-hidden=\"true\">2</span><h3>Un asesor le responde</h3></li><li><span aria-hidden=\"true\">3</span><h3>Vamos a su casa</h3></li></ol>",
+      "css": ".ds-steps { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin: 0; padding: 2rem; list-style: none; border-radius: 1.75rem; background: var(--brand-bg); color: var(--on-brand); } .ds-steps::before { content: ''; position: absolute; top: 4.25rem; left: 4.25rem; right: 33.333%; height: 2px; background: rgb(255 255 255 / 0.35); } .ds-steps li { position: relative; } .ds-steps span { display: grid; place-items: center; width: 4.5rem; height: 4.5rem; margin-bottom: 1.5rem; border-radius: 50%; background: var(--accent); color: var(--on-accent); font-family: var(--font-display); font-size: 2rem; font-weight: 800; box-shadow: 0 0 0 0.6rem var(--brand-bg); } .ds-steps h3 { margin: 0; font-family: var(--font-display); font-size: 1.375rem; font-weight: 700; line-height: 1.2; }"
+    },
+    {
+      "name": "Navegación",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Enlaces de cabecera en píldoras de 3rem, con el botón naranja a la derecha.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a href=\"#\">Servicios</a><a href=\"#\">Cómo funciona</a><a href=\"#\">Nosotros</a><a class=\"ds-nav__cta\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg>Agendar cita</a></nav>",
+      "css": ".ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem; padding: 0.75rem 1rem; border-bottom: 1px solid var(--line); background: var(--surface); font-family: var(--font-body); } .ds-nav a { display: inline-flex; align-items: center; gap: 0.625rem; min-height: 3rem; padding: 0 0.85rem; border-radius: 999px; color: var(--ink); font-size: 1.0625rem; font-weight: 600; text-decoration: none; transition: background-color 0.2s var(--ease), color 0.2s var(--ease); } .ds-nav a:hover { background: var(--tint); color: var(--brand-fg); } .ds-nav a:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; } .ds-nav .ds-nav__cta { margin-left: auto; min-height: 3.25rem; padding: 0.5rem 1.6rem; background: var(--accent); color: var(--on-accent); font-family: var(--font-display); box-shadow: 0 10px 22px -12px rgb(190 110 0 / 0.75); } .ds-nav .ds-nav__cta:hover { background: var(--accent-hover); color: var(--on-accent); }"
+    },
+    {
+      "name": "Barra de acciones móvil",
+      "kind": "custom",
+      "refersTo": "dock-action",
+      "description": "Fija al pie en móvil; aparece cuando los botones del hero salen de pantalla.",
+      "html": "<nav class=\"ds-dock\" aria-label=\"Acciones rápidas\"><a href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"/></svg>Llamar</a><a href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"/></svg>WhatsApp</a><a class=\"ds-dock__main\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M16 2v4M8 2v4M3 10h18\"/></svg>Agendar</a></nav>",
+      "css": ".ds-dock { display: grid; grid-template-columns: 1fr 1.2fr 1.2fr; gap: 0.4rem; max-width: 24rem; padding: 0.6rem 0.75rem; border-top: 1px solid var(--line); background: var(--surface); box-shadow: 0 -8px 24px -12px rgb(10 35 66 / 0.3); } .ds-dock a { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 3.5rem; border: 1.5px solid var(--line-strong); border-radius: 999px; color: var(--ink); font-family: var(--font-display); font-size: 1rem; font-weight: 600; text-decoration: none; } .ds-dock a:hover { border-color: var(--brand-fg); } .ds-dock a:focus-visible { outline: 3px solid var(--brand-fg); outline-offset: 3px; } .ds-dock .ds-dock__main { border-color: var(--accent); background: var(--accent); color: var(--on-accent); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "El sol sobre la casa",
+    "overview": "El sistema sale del logotipo: una casa azul con un sol naranja encima. El azul hace de estructura (titulares, franjas, iconos, bordes activos) y el naranja queda como una sola señal, la de pedir la cita. Es el estándar de la categoría de salud a domicilio que el usuario eligió, llevado con cuidado: fondo azul muy claro, tarjetas blancas de esquinas amplias, fotografía de profesionales con pacientes y la solicitud de cita ya funcionando en la primera pantalla.\n\nLa densidad es baja y el tamaño es alto porque quien lee puede tener 75 años o estar buscando ayuda desde el celular con preocupación. El texto corrido mide 1.125rem, cada objetivo táctil mide al menos 3rem (48 px) y existe un modo de \"letra grande\" que sube la raíz al 115 %. El tema claro es el de partida; el oscuro es un tema completo con sus propios valores, no una inversión automática.\n\nEl sistema no usa cifras de respaldo, testimonios ni rótulos pequeños encima de los títulos: los títulos van solos y la prueba es el texto real del servicio.",
+    "keyCharacteristics": [
+      "Azul de marca como estructura; naranja solo para la acción de agendar.",
+      "Fotografía real con esquinas muy redondeadas, nunca ilustración ni iconos como imagen principal.",
+      "Tarjetas blancas de radio amplio con sombra suave y caída hacia abajo.",
+      "Texto grande, objetivos de 48 px o más y modo de letra grande.",
+      "Tema claro y tema oscuro definidos token por token.",
+      "Un solo momento de movimiento orquestado, en el hero."
+    ],
+    "rules": [
+      {
+        "name": "La regla del sol",
+        "body": "El naranja rellena únicamente los botones que abren o envían la solicitud de cita (cabecera, hero, barra rápida, formulario y la acción principal de la barra móvil) y los tres numerales de los pasos. Fuera de eso solo aparece donde es identidad o accesibilidad: el sol del logotipo, el anillo de foco sobre fondos azules, el enlace de saltar al contenido y la selección de texto. Elegir un servicio o pedir orientación se hace en azul o blanco.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla de los dos azules",
+        "body": "Un relleno usa `brand-bg`; un texto, icono o borde usa `brand-fg`. En claro son el mismo valor y en oscuro no: confundirlos deja texto azul oscuro sobre fondo noche.",
+        "section": "colors"
+      },
+      {
+        "name": "La regla del cero limpio",
+        "body": "Las cifras del texto corrido no se toman de Atkinson, cuyo cero lleva una barra que en horas y teléfonos se lee como un número tachado. Una fuente de rango Unicode (\"SCM Cifras\", U+0030 a U+0039) va primera en la pila de cuerpo y trae los dígitos de Gabarito. Toda superficie nueva hereda esa pila completa.",
+        "section": "typography"
+      },
+      {
+        "name": "La regla de la letra grande",
+        "body": "Los tamaños se escriben en rem. El modo de letra grande cambia solo el tamaño de la raíz (115 %) y todo lo demás escala con él; un tamaño en px rompe ese modo.",
+        "section": "typography"
+      },
+      {
+        "name": "La regla de los tres pisos",
+        "body": "La sombra indica importancia, no decoración: reposo para lo que se lee, flotante para lo que se apoya sobre otra cosa, protagonista para la foto del hero y los dos formularios. Sobre las franjas azules las tarjetas no llevan borde; sobre fondos claros llevan borde de línea más sombra de reposo.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do reservar el naranja para los botones que abren o envían la solicitud de cita y para los numerales de paso (La regla del sol).",
+      "Do usar `brand-fg` para texto, iconos y bordes, y `brand-bg` para rellenos, y revisar cada pieza nueva en los dos temas.",
+      "Do mantener el texto corrido en 1.125rem o más y todo objetivo táctil en 3rem (48 px) o más.",
+      "Do escribir tamaños en rem para que el modo de letra grande los alcance.",
+      "Do heredar la pila de cuerpo completa, con \"SCM Cifras\" primero, en cualquier texto que muestre horas, fechas o teléfonos.",
+      "Do poner etiqueta visible sobre cada campo y redactar el error como una instrucción clara.",
+      "Do usar fotografía real de cuidado en casa con esquinas de 2.25rem o más; en tema oscuro las fotos bajan su brillo a 0.88.",
+      "Do colocar toda animación de entrada dentro de la consulta de movimiento sin preferencia de reducción."
+    ],
+    "donts": [
+      "Don't usar el naranja como decoración, fondo de sección o color de texto, ni en botones que no sean de agendar.",
+      "Don't poner rótulos pequeños encima de los títulos, cifras de respaldo inventadas ni testimonios que la IPS no ha dado.",
+      "Don't mostrar dígitos con Atkinson Hyperlegible: su cero con barra se lee como tachado.",
+      "Don't depender del hover para mostrar información o acciones; el hover solo refuerza.",
+      "Don't usar sombras duras o desplazadas de lado, ni esquinas rectas en tarjetas, campos o fotos.",
+      "Don't añadir una segunda entrada animada fuera del hero.",
+      "Don't escribir colores literales en componentes nuevos; todo color sale de un token que tenga valor en ambos temas."
+    ]
+  }
+}

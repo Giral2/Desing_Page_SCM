@@ -4,6 +4,7 @@ import '@fontsource-variable/atkinson-hyperlegible-next';
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
 import Logo from '../components/Logo.astro';
+import VigiladoSprite from '../components/VigiladoSprite.astro';
 import { site, services, photos } from '../data/site';
 
 const [featured, ...others] = services;
@@ -50,6 +51,7 @@ const nav = [
     </script>
   </head>
   <body>
+    <VigiladoSprite />
     <a class="skip" href="#contenido">Saltar al contenido</a>
 
     <div class="topbar">
@@ -133,7 +135,7 @@ const nav = [
             </div>
             <ul class="hero__facts">
               <li>
-                <img class="vigilado" src="/vigilado-supersalud.svg" alt="Vigilado Supersalud" width="2833" height="540" />
+                <svg class="vigilado" viewBox="0 0 2833 540" role="img" aria-label="Vigilado Supersalud"><use href="#vigilado-logo" /></svg>
               </li>
               <li><Icon name="users" /> Médicos, enfermería y terapeutas</li>
             </ul>
@@ -301,7 +303,7 @@ const nav = [
             <img src={photos.team.src} alt={photos.team.alt} width="1200" height="675" loading="lazy" />
             <p class="badge">
               <span>
-                <img class="vigilado" src="/vigilado-supersalud.svg" alt="Vigilado Supersalud" width="2833" height="540" loading="lazy" />
+                <svg class="vigilado" viewBox="0 0 2833 540" role="img" aria-label="Vigilado Supersalud"><use href="#vigilado-logo" /></svg>
                 Institución prestadora de servicios de salud
               </span>
             </p>

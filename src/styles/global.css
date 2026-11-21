@@ -1138,24 +1138,22 @@ button {
   color: var(--ink-2);
 }
 
-/* Sello "Vigilado Supersalud": fondo blanco propio para que se lea en modo oscuro */
+/* Sello "Vigilado Supersalud": vector sin fondo; las letras negras toman el color de texto del tema */
 .vigilado {
+  --vig-ink: var(--ink);
   display: block;
   width: min(100%, 15rem);
   height: auto;
-  padding: 0.4rem 0.65rem;
-  border-radius: 0.6rem;
-  background: #fff;
-  box-shadow: 0 0 0 1px var(--line);
+  aspect-ratio: 2833 / 540;
 }
 
-.split__media .badge .vigilado {
-  width: min(100%, 15rem);
-  aspect-ratio: auto;
-  object-fit: contain;
-  border-radius: 0.6rem;
+/* En modo oscuro el verde oscuro del texto se aclara para mantener el contraste */
+:root[data-theme='dark'] .vigilado {
+  --vig-green: #3fd08a;
+}
+
+.badge .vigilado {
   margin-bottom: 0.5rem;
-  box-shadow: 0 0 0 1px var(--line);
 }
 
 .badge svg {

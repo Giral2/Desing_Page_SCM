@@ -376,21 +376,8 @@ button {
 
 .logo__mark {
   flex: none;
-  width: 2.9rem;
-  height: 2.9rem;
-}
-
-.logo__sun {
-  fill: var(--accent);
-}
-
-.logo__house,
-.logo__body {
-  stroke: var(--brand-fg);
-}
-
-.logo__head {
-  fill: var(--brand-fg);
+  width: auto;
+  height: 3.5rem;
 }
 
 .logo__text {
@@ -419,15 +406,6 @@ button {
 
 .logo--invert {
   color: #ffffff;
-}
-
-.logo--invert .logo__house,
-.logo--invert .logo__body {
-  stroke: #ffffff;
-}
-
-.logo--invert .logo__head {
-  fill: #ffffff;
 }
 
 .logo--invert .logo__name span {
@@ -1701,8 +1679,7 @@ button {
   }
 
   .logo__mark {
-    width: 2.4rem;
-    height: 2.4rem;
+    height: 2.9rem;
   }
 
   .logo__name {

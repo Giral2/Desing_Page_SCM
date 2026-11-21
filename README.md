@@ -45,6 +45,5 @@ El resultado queda en `dist/`.
 ## Pendiente antes de publicar
 
 - Reemplazar las fotos provisionales de Unsplash por fotos propias (`src/data/site.ts`).
-- Reemplazar el logotipo redibujado en SVG por el vector oficial (`src/components/Logo.astro`).
 - Confirmar que el 315 956 5622 tiene WhatsApp activo.
 - Los enlaces institucionales y la política de privacidad apuntan a las páginas del sitio actual (`/index.php/...`); si el nuevo inicio reemplaza ese sitio en el mismo dominio, dejarán de funcionar.

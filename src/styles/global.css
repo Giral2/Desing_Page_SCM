@@ -1129,7 +1129,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  max-width: 19rem;
+  max-width: 21rem;
   padding: 1rem 1.25rem;
   border-radius: 1.25rem;
   background: var(--surface);
@@ -1141,7 +1141,7 @@ button {
 /* Sello "Vigilado Supersalud": fondo blanco propio para que se lea en modo oscuro */
 .vigilado {
   display: block;
-  width: min(100%, 13rem);
+  width: min(100%, 15rem);
   height: auto;
   padding: 0.4rem 0.65rem;
   border-radius: 0.6rem;
@@ -1150,7 +1150,7 @@ button {
 }
 
 .split__media .badge .vigilado {
-  width: min(100%, 12rem);
+  width: min(100%, 15rem);
   aspect-ratio: auto;
   object-fit: contain;
   border-radius: 0.6rem;

@@ -1138,6 +1138,26 @@ button {
   color: var(--ink-2);
 }
 
+/* Sello "Vigilado Supersalud": fondo blanco propio para que se lea en modo oscuro */
+.vigilado {
+  display: block;
+  width: min(100%, 13rem);
+  height: auto;
+  padding: 0.4rem 0.65rem;
+  border-radius: 0.6rem;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
+.split__media .badge .vigilado {
+  width: min(100%, 12rem);
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 0.6rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
 .badge svg {
   flex: none;
   color: var(--brand-fg);

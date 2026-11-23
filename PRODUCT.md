@@ -58,7 +58,7 @@ Restricciones:
 Datos de contacto:
 - Celular: 315 956 5622 · Email: info@saludencasamedicos.com
 - Dirección: Calle 10 bis # 67A - 69, Cali, Colombia
-- Horario: lunes a viernes 8:00 a. m. a 5:00 p. m.; sábados 8:00 a. m. a 1:00 p. m.
+- Horario: lunes a viernes 7:30 a. m. a 4:30 p. m.; sábados 8:00 a. m. a 12:00 p. m.
 - Instagram: @saludencasamedicos
 
 ## Brand Commitments

@@ -215,7 +215,6 @@ button {
 .band :focus-visible,
 .section--book .book__info :focus-visible,
 .footer :focus-visible,
-.topbar :focus-visible,
 .service--featured :focus-visible {
   outline-color: var(--accent);
 }
@@ -416,67 +415,6 @@ button {
   color: var(--on-deep-2);
 }
 
-/* Barra superior -------------------------------------------------------- */
-
-.topbar {
-  background: var(--deeper);
-  color: var(--on-deep-2);
-  font-size: 1rem;
-}
-
-.topbar__in {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  min-height: 3rem;
-}
-
-.topbar__tools {
-  display: flex;
-  gap: 0.25rem;
-  margin-left: auto;
-}
-
-.topbar__tool {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  min-height: 3rem;
-  padding: 0 0.9rem;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: var(--on-deep-2);
-  font-weight: 600;
-  white-space: nowrap;
-  transition:
-    background-color 0.2s var(--ease),
-    color 0.2s var(--ease);
-}
-
-.topbar__tool:hover,
-.topbar__tool[data-on] {
-  background: rgb(255 255 255 / 0.12);
-  color: #ffffff;
-}
-
-.topbar__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.topbar__phone {
-  color: #ffffff;
-  font-size: 1.125rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.topbar__phone:hover {
-  text-decoration: underline;
-}
-
 /* Cabecera -------------------------------------------------------------- */
 
 .header {
@@ -588,8 +526,7 @@ button {
   display: none;
 }
 
-.tool--menu,
-.tool--compact {
+.tool--menu {
   display: none;
 }
 
@@ -1535,28 +1472,11 @@ button {
 
 /* Adaptación ------------------------------------------------------------ */
 
-@media (max-width: 68rem) {
+/* Con los botones de letra y tema, la navegación completa no cabe por debajo de 75rem:
+   pasa al menú desplegable. */
+@media (max-width: 75rem) {
   .logo__sub {
     display: none;
-  }
-
-  .nav__list a {
-    padding-inline: 0.65rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 62rem) {
-  .topbar__item--hours {
-    display: none;
-  }
-
-  .topbar__tools {
-    margin-left: 0;
-  }
-
-  .topbar__phone {
-    margin-left: auto;
   }
 
   .tool--menu {
@@ -1596,7 +1516,9 @@ button {
   .header__tools {
     margin-left: auto;
   }
+}
 
+@media (max-width: 62rem) {
   .hero__in {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1679,10 +1601,6 @@ button {
     padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
   }
 
-  .topbar {
-    display: none;
-  }
-
   .header__in {
     gap: 0.5rem;
     min-height: 4.25rem;
@@ -1690,10 +1608,6 @@ button {
 
   .header__cta {
     display: none;
-  }
-
-  .tool--compact {
-    display: inline-flex;
   }
 
   .logo__mark {
@@ -1887,5 +1801,32 @@ button {
 @media (max-width: 22rem) {
   .dock a svg {
     display: none;
+  }
+}
+
+/* Pantallas muy angostas (320 px): el logo se compacta para no chocar con los botones */
+@media (max-width: 23rem) {
+  .header__in {
+    gap: 0.35rem;
+  }
+
+  .header__tools {
+    gap: 0.35rem;
+  }
+
+  .header__logo {
+    min-width: 0;
+  }
+
+  .logo {
+    gap: 0.4rem;
+  }
+
+  .logo__mark {
+    height: 2.4rem;
+  }
+
+  .logo__name {
+    font-size: 0.9375rem;
   }
 }

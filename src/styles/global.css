@@ -1219,6 +1219,22 @@ button {
   color: var(--on-deep-2);
 }
 
+/* Horario: cada día con su hora debajo; la hora nunca se parte en dos líneas */
+.contact__hours {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.contact__hours dt {
+  font-weight: 400;
+  color: var(--on-deep-2);
+}
+
+.contact__hours dd {
+  white-space: nowrap;
+}
+
 .contact a {
   color: #ffffff;
   overflow-wrap: anywhere;

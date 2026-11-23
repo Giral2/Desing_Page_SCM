@@ -391,7 +391,16 @@ const nav = [
                 <span class="contact__icon"><Icon name="clock" /></span>
                 <span>
                   <span class="contact__label">Horario</span>
-                  {site.hours.map((h) => <span class="contact__line">{h.days}: {h.time}</span>)}
+                  <dl class="contact__hours">
+                    {
+                      site.hours.map((h) => (
+                        <div>
+                          <dt>{h.days}</dt>
+                          <dd>{h.time}</dd>
+                        </div>
+                      ))
+                    }
+                  </dl>
                 </span>
               </li>
             </ul>

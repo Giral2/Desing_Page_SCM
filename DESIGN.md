@@ -234,7 +234,7 @@ Una familia de azules del mismo matiz, del casi blanco al azul noche, y un únic
 - **Azul de marca** (`brand-bg` #0f4c9a; oscuro #1a5fb8): rellenos. Botón primario, franja de "cómo funciona", tarjeta de servicio destacada y la forma que asoma detrás de la foto del hero.
 - **Azul de lectura** (`brand-fg` #0f4c9a; oscuro #93c2ff): texto y trazo. Enlaces, iconos, palabra resaltada del titular, bordes de estado activo y anillo de foco. En claro coincide con el azul de marca; en oscuro se aclara para leerse sobre fondo noche.
 - **Azul profundo** (`deep` #0a2f63; oscuro #0a2a55): sección de cita. En tema oscuro también reemplaza al azul de marca en la franja de pasos.
-- **Azul noche** (`deeper` #061b36; oscuro #030b15): barra superior y pie.
+- **Azul noche** (`deeper` #061b36; oscuro #030b15): pie.
 
 ### Secondary
 - **Naranja sol** (`accent` #f8a230; oscuro #ffad42; hover #ffb650 / #ffc06b): la acción de agendar, con texto azul tinta (`on-accent` #0a2342) encima.
@@ -287,7 +287,7 @@ Las composiciones son de dos columnas desiguales, no de rejilla uniforme: el her
 Cambios por ancho, medidos en el código:
 - **68rem:** se oculta el lema del logotipo y la navegación se aprieta.
 - **62rem:** la navegación pasa a un panel desplegable bajo la cabecera; hero, bloques y cita pasan a una columna; servicios a dos columnas con la destacada a todo el ancho en horizontal; pie a dos columnas.
-- **47.5rem:** desaparece la barra superior y sus controles (letra grande, tema) pasan a la cabecera como botones redondos; todo queda en una columna; los botones del hero ocupan el ancho completo; las tarjetas flotantes dejan de flotar y se apoyan bajo su foto; los pasos se apilan con la línea en vertical; aparece la barra de acciones fija.
+- **47.5rem:** el "Agendar cita" de la cabecera se oculta (queda la barra fija); todo queda en una columna; los botones del hero ocupan el ancho completo; las tarjetas flotantes dejan de flotar y se apoyan bajo su foto; los pasos se apilan con la línea en vertical; aparece la barra de acciones fija.
 - **26rem y 22rem:** la barra de acciones reduce su texto y luego suelta los iconos.
 
 ## Elevation & Depth
@@ -339,7 +339,7 @@ Amables y contundentes: píldoras altas con texto en Gabarito 600.
 - **Opciones:** cada opción es una caja de 3.5rem con su círculo de 1.5rem; la elegida toma borde y texto azul sobre azul lavado fuerte.
 
 ### Navigation
-- **Barra superior:** franja azul noche con horario, los controles rotulados de letra grande y modo oscuro, y el teléfono en blanco y 700.
+- **Botones de la cabecera:** dos círculos de 48 px junto a "Agendar cita" (letra grande "Aa" y modo claro/oscuro), con borde fino, nombre accesible y tooltip; el activo se tiñe de azul. No hay barra superior: horario y teléfono viven en el hero, el contacto y la barra fija del celular.
 - **Cabecera:** blanca y fija arriba, con borde inferior de línea y sombra de reposo al desplazarse. Enlaces en 600 con forma de píldora de 3rem; hover con azul lavado y texto azul. A la derecha, el botón naranja de agendar.
 - **Botones de herramienta:** círculos de 3rem con borde de línea; activos toman azul lavado fuerte con borde y icono azul.
 - **Móvil:** el menú se despliega bajo la cabecera con filas de 3.5rem y se cierra al elegir o con Escape.

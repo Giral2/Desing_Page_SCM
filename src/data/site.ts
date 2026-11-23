@@ -9,8 +9,8 @@ export const site = {
   address: 'Calle 10 bis # 67A - 69',
   city: 'Cali, Colombia',
   hours: [
-    { days: 'Lunes a viernes', time: '8:00 a. m. a 5:00 p. m.' },
-    { days: 'Sábados', time: '8:00 a. m. a 1:00 p. m.' },
+    { days: 'Lunes a viernes', time: '7:30 a. m. a 4:30 p. m.' },
+    { days: 'Sábados', time: '8:00 a. m. a 12:00 p. m.' },
   ],
   instagram: 'https://www.instagram.com/saludencasamedicos',
   privacyPdf: 'https://www.saludencasamedicos.com/images/politica-proteccion-datos-salud-en-casa.pdf',
